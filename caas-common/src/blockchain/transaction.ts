@@ -1,3 +1,5 @@
+import CryptoJS from 'crypto-js'
+
 export class Transaction {
     sender: string;
     receiver: string;
@@ -14,6 +16,8 @@ export class Transaction {
     }
 
     calculateHash(){
-        return '';
+        const hashString = this.sender + this.receiver + this.amount + this.time;
+
+        return CryptoJS.SHA512(hashString).toString();
     }
 }
