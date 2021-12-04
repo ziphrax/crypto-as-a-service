@@ -4,13 +4,14 @@
   "description": "",
   "main": "dist/index.js",
   "scripts": {
-    "test": "jest --env=node --colors --coverage --passWithNoTests",
-    "test:watch": "jest --env=node --colors --coverage --watch --passWithNoTests"
+    "test": "jest --env=node --colors --coverage --passWithNoTests tests",
+    "test:watch": "jest --env=node --colors --coverage --watch --passWithNoTests tests"
   },
   "keywords": [],
   "author": "",
   "license": "ISC",
   "dependencies": {
+    "axios": "^0.24.0",
     "tslint": "^6.1.3",
     "typescript": "^4.5.2"
   },

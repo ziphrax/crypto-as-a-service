@@ -29,4 +29,8 @@ export class Block {
 
         return hash.toString();
     }
+
+    mineBlock(difficulty: number){
+        //TODO: 
+    }
 }
