@@ -1,0 +1,9 @@
+{
+  "version": "v1",
+  "packages": {
+    "@caas/common": {
+      "signature": "db1c0e6cc0ab0e0efa29b1a23f11905c",
+      "file": true
+    }
+  }
+}

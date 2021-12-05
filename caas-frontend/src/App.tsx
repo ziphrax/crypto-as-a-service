@@ -10,6 +10,7 @@ import { Counter } from './features/counter/Counter';
 import './App.css';
 
 import Home from './routes/home'
+import WalletPage from './routes/wallet';
 
 function App() {
   return (
@@ -18,11 +19,13 @@ function App() {
           <ul>
             <li>
               <Link to="/">Home</Link>
+              <Link to="/wallet">Wallet</Link>
             </li>
           </ul>
         </nav>
         <Routes>
           <Route path="/" element={<Home />} />
+          <Route path="/wallet" element={<WalletPage />} />
         </Routes>
       </div>
   );

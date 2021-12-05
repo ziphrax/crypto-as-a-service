@@ -1,8 +1,9 @@
 {
-  "name": "caas-frontend",
+  "name": "@caas/frontend",
   "version": "0.1.0",
   "private": true,
   "dependencies": {
+    "@caas/common": "file:.yalc/@caas/common",
     "@reduxjs/toolkit": "^1.5.1",
     "@testing-library/jest-dom": "^4.2.4",
     "@testing-library/react": "^9.3.2",
@@ -12,12 +13,16 @@
     "@types/react": "^16.9.0",
     "@types/react-dom": "^16.9.0",
     "@types/react-redux": "^7.1.7",
+    "@types/uuid": "^8.3.3",
+    "axios": "^0.24.0",
+    "caas-common": "file:.yalc/caas-common",
     "react": "^17.0.2",
     "react-dom": "^17.0.2",
     "react-redux": "^7.2.0",
     "react-router-dom": "^6.0.2",
     "react-scripts": "4.0.3",
-    "typescript": "~4.1.5"
+    "typescript": "~4.1.5",
+    "uuid": "^8.3.2"
   },
   "scripts": {
     "start": "react-scripts start",
