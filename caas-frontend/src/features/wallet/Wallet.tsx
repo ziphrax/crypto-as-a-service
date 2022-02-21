@@ -53,11 +53,21 @@ export function Wallet() {
         <div>
             <WalletsList />
 
-            <form onSubmit={onSubmitCreateWallet}>
-                <legend>New Wallet</legend>
-                <label htmlFor="wallet">Name:</label>
-                <input id="name" type="text" />
-                <button type="submit">Create</button>
+            <form className="c-form" onSubmit={onSubmitCreateWallet}>
+                <h2>New Wallet</h2>
+
+                <p>Enter a name for your new crypto wallet below.</p>
+
+                <div className="c-form-input">
+                    <label className="c-label" htmlFor="wallet">Name:</label>
+                    <input className="c-input" id="name" type="text" />
+                </div>
+
+                <div className="c-form-input">
+                    {/* TODO: OFFSET */}
+                    <label className="c-label"></label>
+                    <button className="c-button c-button--primary" type="submit">Create</button>
+                </div>
             </form>
 
         </div>

@@ -1,33 +1,27 @@
-import React from 'react';
-import { Link } from "react-router-dom";
-import {
-  BrowserRouter,
-  Routes,
-  Route
-} from "react-router-dom";
-import logo from './logo.svg';
-import { Counter } from './features/counter/Counter';
-import './App.css';
+import React from "react";
+import {  Routes, Route } from "react-router-dom";
+import "./App.css";
 
-import Home from './routes/home'
-import WalletPage from './routes/wallet';
+import Home from "./routes/home";
+import WalletPage from "./routes/wallet";
+import Navigation from "./components/Navigation/Navigation";
+import Header from "./components/Header/Header";
+import Footer from "./components/Footer/Footer";
 
 function App() {
   return (
-      <div>
-        <nav>
-          <ul>
-            <li>
-              <Link to="/">Home</Link>
-              <Link to="/wallet">Wallet</Link>
-            </li>
-          </ul>
-        </nav>
+    <div className="c-app">
+      <Header>
+        <Navigation />
+      </Header>
         <Routes>
           <Route path="/" element={<Home />} />
           <Route path="/wallet" element={<WalletPage />} />
         </Routes>
-      </div>
+      <Footer>
+        <p className="u-center">Copyright {new Date().getFullYear()}</p>
+      </Footer>
+    </div>
   );
 }
 
